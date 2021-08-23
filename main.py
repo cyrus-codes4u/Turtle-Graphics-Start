@@ -1,6 +1,9 @@
 from turtle import Turtle, Screen
+import random
 
 turtle = Turtle()
+
+colors = ["DarkOrchid", "wheat", "SeaGreen", "SlateGray", "DeepSkyBlue", "IndianRed"]
 
 
 def draw_shape(num_sides):
@@ -11,6 +14,7 @@ def draw_shape(num_sides):
 
 
 for i in range(3, 11):
+    turtle.color(random.choice(colors))
     draw_shape(i)
 
 
